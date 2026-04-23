@@ -6,10 +6,24 @@
 
 <meta charset="UTF-8">
 
-<title>The Voyager</title>
+<title>"""
+...{wvy}{/wvy}{
+  - {item "0"} == 1 ?
+    ...
+  - else ?
+    ...
+}
+"""</title>
 
 <script type="text/bitsyGameData" id="exportedGameData">
-The Voyager
+"""
+...{wvy}{/wvy}{
+  - {item "0"} == 1 ?
+    ...
+  - else ?
+    ...
+}
+"""
 
 # BITSY VERSION 8.15
 
@@ -21,8 +35,8 @@ The Voyager
 
 PAL 0
 0,0,0
-162,242,52
-224,239,216
+157,240,76
+232,238,237
 NAME blueprint
 
 ROOM 0
@@ -32,17 +46,24 @@ a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
 a,a,a,a,e,e,a,a,a,a,e,e,a,a,a,a
 a,a,a,a,e,e,a,a,a,a,e,e,a,a,a,a
 a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,a,0,0,0,a,a,a,a,a,g,h,i,a,a,a
+a,a,0,0,0,a,a,a,a,a,j,k,l,a,a,a
 a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
-a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
-a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
-a,0,0,0,0,0,0,c,0,c,0,0,0,0,0,a
-a,0,0,0,0,0,0,c,0,c,0,0,c,0,0,a
-a,0,0,0,0,0,0,c,0,c,0,0,0,0,0,a
-a,0,0,0,0,0,0,c,0,c,0,0,0,0,0,a
-a,f,f,f,0,0,0,c,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,n,0,0,0,a
+a,0,0,0,m,0,m,0,m,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,m,0,m,0,m,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,f,f,f,0,0,0,0,0,0,0,0,0,0,0,a
-a,f,f,f,g,0,0,0,0,0,0,0,d,0,0,a
-NAME example room
+a,f,f,f,0,0,0,0,0,0,0,0,0,0,0,a
+NAME classroom - part 1
+ITM 2 11,15
+ITM 8 4,6
+ITM 7 2,6
+ITM 6 3,6
+ITM a 2,9
+ITM 9 11,10
+ITM 3 4,15
 PAL 0
 TUNE 2
 
@@ -65,29 +86,7 @@ TIL a
 11111111
 11111111
 NAME classrooms_walls
-WAL false
-
-TIL c
-00000000
-00000000
-00000000
-00000000
-01111110
-01111110
-01100110
-01100110
-NAME classroom_table
-
-TIL d
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
-11111111
-11111111
-NAME classroom_door
+WAL true
 
 TIL e
 00011000
@@ -109,27 +108,107 @@ TIL f
 01001000
 01111000
 00000000
+>
+00000000
+00000000
+01111000
+01111000
+01001000
+01001000
+01111000
+00000000
 NAME closed_cardboard_box
+WAL true
 
 TIL g
 00000000
+00111010
+00101010
+00111010
+00101010
+00111011
 00000000
-00111100
-00111100
-00100100
-00100100
-00111100
 00000000
->
+NAME presented_blackboard_part_1
+
+TIL h
 00000000
-00011000
-00011000
-01100110
-01100110
-00011000
-00011000
+01110111
+01010100
+01110100
+01010100
+01010111
 00000000
-NAME time_machine_box
+00000000
+NAME presented_blackboard_part_2
+
+TIL i
+00000000
+01001000
+01010000
+01100000
+01010000
+01001000
+00000000
+00000000
+NAME presented_blackboard_part_3
+
+TIL j
+00000000
+00111011
+00101010
+00111010
+00101010
+00111011
+00000000
+00000000
+NAME presented_blackboard_part_4
+
+TIL k
+00000000
+10111101
+10100101
+10111101
+10100101
+10100101
+00000000
+00000000
+NAME presented_blackboard_part_5
+
+TIL l
+00000000
+11011100
+01010100
+11010100
+10010100
+01011100
+00000000
+00000000
+NAME presented_blackboard_part_6
+
+TIL m
+00000000
+00000000
+11111000
+11111000
+11111000
+11111000
+11011000
+11011000
+NAME pupil's_desk
+WAL true
+
+TIL n
+00000000
+00000000
+00000000
+11111111
+11111111
+11111111
+11100111
+11100111
+NAME solid_teacher's_desk
+WAL true
 
 SPR A
 00111000
@@ -140,7 +219,8 @@ SPR A
 01111000
 00101000
 01000100
-POS 0 4,11
+POS 0 10,12
+ITM 3 1
 
 SPR a
 00000000
@@ -155,48 +235,133 @@ NAME cat
 DLG 0
 BLIP 1
 
-ITM 0
+SPR b
+00111000
 00000000
 00000000
 00000000
-00111100
-01100100
-00100100
-00011000
 00000000
-NAME tea
-DLG 1
+00000000
+00000000
+00000000
 
-ITM 1
+ITM 2
 00000000
-00111100
-00100100
-00111100
+00000000
+00000000
+00000000
+00000000
+00000000
+11111111
+11111111
+NAME classroom_door
+
+ITM 3
+00000000
+00000000
+01111000
+01111000
+01001000
+01001000
+01111000
+00000000
+NAME closed_cardboard
+
+ITM 4
+00000000
+00110000
+00110000
+11001100
+11001100
+00110000
+00110000
+00000000
+NAME shattered_box
+
+ITM 5
+00000000
+00000000
+00000000
+11111111
+11111111
+11111111
+11100111
+11100111
+NAME teacher's_desk
+DLG 1
+BLIP 1
+
+ITM 6
+00000000
+00000000
+11101000
+11101100
+10000100
+10000110
+10000011
+10000001
+NAME presented_TV_part_1
+
+ITM 7
+00000000
+00000000
+00000111
+00000111
+00000001
+00000001
+00000001
+00000001
+NAME presented_TV_part_2
+
+ITM 8
+00000000
+00000000
 00010000
-00011000
-00010000
-00011000
-NAME key
-DLG 2
-BLIP 2
+00110000
+00100000
+01100000
+11000000
+10000000
+NAME presented_TV_part_3
+
+ITM 9
+00000000
+00000000
+00000000
+01111110
+01110010
+01001110
+01111110
+00000000
+NAME teacher's_notebook
+
+ITM a
+00000000
+00100000
+01111100
+01000100
+01010100
+01000100
+01010100
+01111100
+NAME TV_control
 
 DLG 0
 I'm a cat
 NAME cat dialog
 
 DLG 1
-You found a nice warm cup of tea
-NAME tea dialog
+C'est un bureau !
+NAME teacher's_desk dialog
 
-DLG 2
-A key! {wvy}What does it open?{wvy}
-NAME key dialog
+VAR timeMachineCardboard
+0
 
-VAR a
-42
+VAR teacherDesk
+1
 
 TUNE 1
-3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
+3d,0,0,0,d5,0,d5,l,0,0,0,0,3s,0,0,0
 16d2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 >
 4l,0,0,0,s,0,3l,0,0,0,2s,0,2m,0,2r,0
