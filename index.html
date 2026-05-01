@@ -40,15 +40,15 @@ a,0,0,0,m,0,m,0,m,0,0,0,0,0,0,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,0,0,0,m,0,m,0,m,0,0,0,0,0,0,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
-a,f,f,f,0,0,0,0,0,0,0,0,0,0,0,a
-a,f,f,f,o,0,0,0,0,0,0,0,p,0,0,a
+a,f,f,f,0,0,0,0,0,0,0,0,0,0,p,a
+a,f,f,f,o,0,0,0,0,0,0,0,0,0,0,a
 NAME classroom - scene 1
 ITM 8 4,6
 ITM 7 2,6
 ITM 6 3,6
 ITM a 2,9
 ITM 9 11,10
-EXT 12,15 1 2,15 DLG 3
+EXT 14,14 1 0,14 DLG 3
 PAL 0
 TUNE 2
 
@@ -67,11 +67,11 @@ w,u,x,0,12,12,12,12,0,0,0,0,0,0,0,0
 0,0,0,12,12,12,0,0,w,u,x,0,0,r,0,0
 0,0,0,12,12,12,0,0,0,r,0,0,0,r,0,0
 0,0,12,12,12,12,0,0,0,r,0,0,11,q,v,0
-0,0,12,12,12,12,0,0,11,q,v,0,0,0,0,0
-0,0,p,0,0,0,0,0,0,0,0,0,0,0,0,0
+1g,0,12,12,12,12,0,0,11,q,v,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Rome's countryside - scene 2
-EXT 5,15 2 12,15 FX tunnel DLG b
-EXT 2,15 0 12,15 DLG 4
+EXT 0,11 2 14,14 FX tunnel DLG b
+EXT 0,14 0 14,14 DLG 4
 PAL 0
 
 ROOM 2
@@ -89,8 +89,8 @@ a,0,0,0,m,0,m,0,m,0,0,0,0,0,0,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
 a,0,0,0,m,0,m,0,m,0,0,0,0,0,0,a
 a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
-a,f,f,f,0,0,0,0,0,0,0,0,0,0,0,a
-a,f,f,f,o,0,0,0,0,0,0,0,p,0,0,a
+a,f,f,f,0,0,0,0,0,0,0,0,0,0,p,a
+a,f,f,f,o,0,0,0,0,0,0,0,0,0,0,a
 NAME classroom - scene 3
 ITM 8 4,6
 ITM 7 2,6
@@ -357,14 +357,14 @@ TIL o
 NAME shattered_box
 
 TIL p
-00000000
-00000000
-00000000
-00000000
-00000000
-00000000
-11111111
-11111111
+00000011
+00000011
+00000011
+00000011
+00000011
+00000011
+00000011
+00000011
 NAME classroom_door
 WAL false
 
@@ -529,6 +529,17 @@ TIL 1f
 00000101
 00101010
 NAME grass
+
+TIL 1g
+11000000
+11000000
+11000000
+11000000
+11000000
+11000000
+11000000
+11000000
+NAME scene2_door
 
 SPR A
 00111000
@@ -775,27 +786,27 @@ DLG 2
       Calcul impossible !{/shk} 
     {drws "broken_time_machine"}{shk} Dernière localisation vers      GammaY6.{/shk} {pg}{drws "A"} ??????{pg}{drws "broken_time_machine"}{shk} Diagnostique en cours...{/shk}{pg}{drws "broken_time_machine"}{shk} Échec de confirmation pour le   vérin du processeur 3797 !{/shk}
     {drws "broken_time_machine"}{shk} Résultat : retour dans espace   temporel fortement contrarié ! {/shk}
-    {drws "broken_time_machine"} liste des composants (quantité/état)* :
-    . titanium (60%/bon)
-    . chrome (40%/données)
-    . combusible#1 (90%/bon)
-    . combusible#2 (94%/bon)
-    . combusible#3 (82%/bon)
-    . allun (10%/insuffisant)
+    {drws "broken_time_machine"}{shk} liste des composants            (quantité/état)* :{/shk}
+     {shk}. titanium (60%/bon){/shk}
+     {shk}. chrome (40%/données){/shk}
+     {shk}. combusible#1 (90%/bon){/shk}
+     {shk}. combusible#2 (94%/bon){/shk}
+     {shk}. combusible#3 (82%/bon){/shk}
+     {shk}. allun (10%/insuffisant){/shk}
     
-    * encodage endommagé -> 
-    {drws "broken_time_machine"} erreurs typographiques constatées !{/shk}
-    {drws "A"} ... !{pg}{drws "broken_time_machine"} {shk}État de la batterie : 30%. Durée de vie : 4 heures.{/shk}{pg}{drws "A"} Ouah ! Une machine 
-    à voyager dans le temps !!! 
-    {drws "A"} Bon ! Restons calme !{pg}{drws "broken_time_machine"} {shk}Besoin en Alun pour fonctionnement !
+    {drws "broken_time_machine"} {shk}* encodage endommagé ->{/shk} 
+    {drws "broken_time_machine"} {shk}erreurs typographiques          constatées !{/shk}
+    {drws "A"} ... !{pg}{drws "broken_time_machine"} {shk}État de la batterie : 30%.      Durée de vie : 4 heures.{/shk}{pg}{drws "A"} Ouah ! Une machine 
+      à voyager dans le temps !!! 
+    {drws "A"} Bon ! Restons calme !{pg}{drws "broken_time_machine"} {shk}Besoin en Alun pour             fonctionnement !
     {drws "broken_time_machine"} Localisé ! 
-    Époque : juin 1944. 
+      Époque : juin 1944. 
     {drws "broken_time_machine"} Aire géographique : 
-    Nord de la France.
-    {drws "broken_time_machine"} Veuillez approuver la proposition...{/shk}{pg}{drws "A"} J'ai toujours rêvé d'être 
-    parachuté au-dessus 
-    de la Normandie ! 
-    Trop cool ! Je vais approuvé !
+      Nord de la France.
+    {drws "broken_time_machine"} Veuillez approuver              la proposition...{/shk}{pg}{drws "A"} J'ai toujours rêvé d'être 
+      parachuté au-dessus 
+    {drws "A"} de la Normandie ! 
+      Trop cool ! Je vais approuvé !
     {pg}{drws "broken_time_machine"} {shk}Incohérence du système ! 
     Instabilité ! 
     {drws "broken_time_machine"} Nouveau choix en attente... 
