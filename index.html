@@ -550,7 +550,7 @@ SPR A
 01111000
 00101000
 01000100
-POS 0 6,11
+POS 1 6,6
 ITM 3 1
 
 SPR b
@@ -805,18 +805,20 @@ DLG 2
       Nord de la France.
     {drws "broken_time_machine"} Veuillez approuver              la proposition...{/shk}{pg}{drws "A"} J'ai toujours rêvé d'être 
       parachuté au-dessus 
-    {drws "A"} de la Normandie ! 
-      Trop cool ! Je vais approuvé !
+    {drws "A"} de la Normandie ! Trop cool ! 
+      Je vais approuvé !
     {pg}{drws "broken_time_machine"} {shk}Incohérence du système ! 
-    Instabilité ! 
+      Instabilité ! 
     {drws "broken_time_machine"} Nouveau choix en attente... 
-    Époque : 
+      Époque : 
     {drws "broken_time_machine"} vers 1er siècle après J.-C.
-    Aire géographique : 
+      Aire géographique : 
     {drws "broken_time_machine"} autour de Rome.
-    {classroomDoorStatus = 1}{drws "broken_time_machine"} Veuillez approuver 
-    la proposition ...{/shk}{pg}{drws "A"} Allons y !!!{pg} {drws "broken_time_machine"} {shk}Déplacement temporel effectué ! 
-    Déverrouillage de la porte principale !{/shk}
+    {classroomDoorStatus = 1}  Veuillez approuver 
+    {drws "broken_time_machine"} la proposition ...{/shk}{pg}{drws "A"} Allons y !!!{pg}{drws "broken_time_machine"} {shk}Déplacement temporel 
+      effectué ! 
+    {drws "broken_time_machine"} Déverrouillage de la porte 
+      principale !{/shk}
   - scene1Transition == 1 ?
      {drws "A"} La machine semble s'être mise en veille...
 }
@@ -827,9 +829,10 @@ DLG 3
 """
 {
   - classroomDoorStatus == 0 ?
-    {property locked true}Ça ne s'ouvre pas ! Mais pourquoi ?
+    {property locked true}{drws "A"} Ça ne s'ouvre pas ! Mais 
+      pourquoi ?
   - classroomDoorStatus == 1 ?
-    {property locked false}C'est ouvert !!!!
+    {property locked false}{drws "A"} C'est ouvert !!!!
     {classroomDoorStatus = 2}{scene1Transition = 1}
   - scene1Transition == 1 ?
     {property locked false}
@@ -841,17 +844,21 @@ DLG 4
 """
 {
   - timeMachineComponents == 1 ?
-    {property locked true}Aaaaaah ! Ça ne s'ouvre plus !!!!! 
-    Bon ! Restons calme (aahhhhhh !) !
+    {property locked true}{drws "A"} Aaaaaah ! Ça ne 
+      s'ouvre plus !!!!! 
+    {drws "A"} Bon ! Restons calme (aaahh) !
 }
 """
 NAME scene_2a_door_lock
 
 DLG 6
 """
-Behh !{sheepContact = 1}{
+{drws "antique_sheep_2"} Behh !{sheepContact = 1}{
   - timeMachineComponents == 1 ?
-    La porte que tu cherches se trouve juste à côté de l'autre, à sa droite !
+     La porte que tu 
+      cherches se trouve 
+    {drws "antique_sheep_2"} juste à côté 
+      de l'autre, à sa droite !
   - else ?
     ...
 }
@@ -859,68 +866,81 @@ Behh !{sheepContact = 1}{
 NAME antique_sheep_2 dialog
 
 DLG 7
-Behh !{sheepContact = 1}
+{drws "antique_sheep_1"} Behh !{sheepContact = 1}
 NAME antique_sheep_1 dialog
 
 DLG 8
-Behh !{sheepContact = 1}
+{drws "antique_sheep_3"} Behh !{sheepContact = 1}
 NAME antique_sheep_3 dialog
 
 DLG 9
-Behh !{sheepContact = 1}
+{drws "antique_sheep_4"} Behh !{sheepContact = 1}
 NAME antique_sheep_4 dialog
 
 DLG a
 """
 {
   - sheepContact == 1 ?
-    {drws "Icarius"}Adulescens amator, digitus tuus opus meum teneriter perstrinxit.
+    {drws "Icarius"} Adulescens amator, digitus 
+      tuus opus meum teneriter 
+    {drws "Icarius"} perstrinxit.
 }{pg}{
   - sheepContact == 1 ?
-    {drws "A"}Ah oui, j’avais oublié… 
-    le voyage dans le temps et tout !
-    C’est tellement trop cool !
+    {drws "A"} Ah oui, j’avais oublié...
+      le voyage dans le temps ! 
+    {drws "A"} C’est tellement trop cool !
 }{pg}{
   - sheepContact == 1 ?
-    {drws "Icarius"}Quo nomine vocaris ?
+    {drws "Icarius"} Quo nomine vocaris ?
 }{pg}{
   - sheepContact == 1 ?
-    {drws "A"}Patronymicum mihi est Attila, 
-    filius Gregorii et uxoris eius Dalila (lol) !
+    {drws "A"} Patronymicum mihi est 
+      Attila, filius Gregorii et 
+    {drws "A"} uxoris eius Dalila (lol) !
 }{pg}{
   - sheepContact == 1 ?
-    {drws "Icarius"}Et quo tendis ? Unde venis ? 
+    {drws "Icarius"} Et quo tendis ? 
+      Unde venis ? 
 }{pg}{
   - sheepContact == 1 ?
-    {drws "A"}Versus loca illa peto ubi alumen abundat, 
-    magister terrarum mirabilium proprietatum. 
-    Ego autem ex omnibus locis venio atque ex nullo.
+    {drws "A"} Versus loca illa peto ubi 
+      alumen abundat, magister 
+    {drws "A"} terrarum mirabilium 
+      proprietatum. 
+    {drws "A"} Ego autem ex omnibus locis 
+      venio atque ex nullo.
 }{pg}{
   - sheepContact == 1 ?
-    {drws "Icarius"}Ah ! Iuventus alas tibi dat quas sol attingere non potest.
+    {drws "Icarius"} Ah ! Iuventus alas tibi 
+      dat quas sol attingere non 
+    {drws "Icarius"} potest.
 }{pg}{
   - sheepContact == 1 ?
-    {drws "A"}Quo nomine tu ipse appellaris ?
+    {drws "A"} Quo nomine tu 
+      ipse appellaris ?
 }{pg}{
   - sheepContact == 1 ?
-    {drws "Icarius"}Icarius sum, filius Petri et Petrae, 
-    qui iam diu bene vixit !
+    {drws "Icarius"} Icarius sum, 
+      filius Petri et Petrae, 
+    {drws "Icarius"} qui iam diu bene vixit !
 }{pg}{
   - sheepContact == 1 ?
-    {drws "A"} Consiliumne mihi dare potes ? 
-    Alumen in his regionibus quaero !
+    {drws "A"} Consiliumne mihi dare potes ? 
+      Alumen in his regionibus 
+    {drws "A"} quaero !
 }{pg}{
   - sheepContact == 1 ?
-    {drws "Icarius"}…Possum tibi dare ! Accipe !
+    {drws "Icarius"} Possum tibi dare ! Accipe !
 }{pg}{
   - sheepContact == 1 ?
-    {drws "A"}Genre ! Comme ça ?
+    {drws "A"} Genre ! Comme ça ?
 }{pg}{
   - sheepContact == 1 ?
-    {timeMachineComponents = 1}{drws "Icarius"} Huh ? Hanc linguam non novi, sed ecce alumen tuum !
+    {timeMachineComponents = 1}{drws "Icarius"} Huh ? Hanc linguam non novi, 
+      sed ecce alumen tuum !
 }{pg}{
   - sheepContact == 1 ?
-    {drws "A"} Gratias tibi agere volebam !
+    {drws "A"} Gratias tibi agere volebam !
 }
 """
 NAME Icarius dialog
@@ -931,7 +951,8 @@ DLG b
   - timeMachineComponents == 0 ?
     {property locked true}
   - else ?
-    {rbw}Enfin !!!! Une porte qui s'ouvre !{/rbw}{property locked false}
+    {drws "A"} {rbw}Enfin !!!! Une porte qui 
+      s'ouvre !{/rbw}{property locked false}
 }
 """
 NAME scene_2b_door_lock
