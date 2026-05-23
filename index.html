@@ -653,7 +653,7 @@ SPR A
 01111000
 00101000
 01000100
-POS 3 9,8
+POS 0 6,11
 ITM 3 1
 
 SPR b
@@ -1059,7 +1059,6 @@ ITM d
 00000100
 NAME bomb
 DLG g
-BLIP 3
 
 DLG 2
 """
@@ -1087,7 +1086,7 @@ DLG 2
      {shk}. margarine (2%/insuffisant){/shk}
     
     {drws "broken_time_machine"} {shk}* encodage endommagé ->{/shk} 
-     {shk} erreurs typographiques !{/shk}{pg}{drws "A"} ... !{pg}{drws "broken_time_machine"} {shk}État de la batterie : 30%.      Durée de vie : 4 heures.{/shk}{pg}{drws "A"} Ouah ! Une machine à 
+     {shk} erreurs typographiques !{/shk}{pg}{drws "A"} Ouah ! Une machine à 
       voyager dans le temps !!! 
     {drws "A"} Bon ! Restons calme !{pg}{drws "broken_time_machine"} {shk}Besoin en Alun localisé pour
       fonctionnement ! 
@@ -1119,7 +1118,7 @@ DLG 2
     {drws "broken_time_machine"} Nouvelle proposition : 1944
       Aire géographique : Normandie
     {drws "broken_time_machine"} Approuvez-vous ? {/shk}
-    {timeMachineComponents = 3}{scene1Transition = 2}{classroomDoorStatus = 3}{pg}{drws "A"} Génial !!!! Approuver !{pg}{drws "broken_time_machine"} {shk}Déplacement temporel 
+    {timeMachineComponents = 3}{scene1Transition = 2}{classroomDoorStatus = 3}{pg}{drws "A"} Génial !!!! J'approuve !{pg}{drws "broken_time_machine"} {shk}Déplacement temporel 
       effectué ! 
     {drws "broken_time_machine"} Déverrouillage de la porte 
       principale !{/shk}{sheepContact = 0}
@@ -1268,10 +1267,10 @@ DLG c
 """
 {
   - timeMachineComponents == 4 ?
-    {repaired_time_machine = 1}{drws "repaired_time_machine"} Réinitialisation de la 
+    {drws "broken_time_machine_scene_4"} Réinitialisation de la 
       machine ! Substance absorbée !
-    {drws "repaired_time_machine"} Connexion établie avec GamaW. 
-      Réparation terminé !{pg}{drws "A"} Ahahaha :D !
+    {drws "broken_time_machine_scene_4"} Connexion établie avec GamaW. 
+      Réparation terminée !{pg}{drws "A"} Ahahaha :D !
 }{end}
 """
 NAME broken_time_machine_scene_4_dialog
@@ -1279,10 +1278,12 @@ NAME broken_time_machine_scene_4_dialog
 DLG d
 """
 {cycle
-  - {drwi "tv_control"} Chaine première : ......................
-    {drwi "tv_control"} Recherche de signal...
-  - {drwi "tv_control"} Chaine deuxième : ......................
-    {drwi "tv_control"} Recherche de signal...
+  - {drwi "tv_control"} Chaine première : ...........
+      .............................
+    {drwi "tv_control"} Recherche de signal..........
+  - {drwi "tv_control"} Chaine deuxième : ...........
+      .............................
+    {drwi "tv_control"} Recherche de signal..........
 }
 """
 NAME tv_control_dialog
@@ -1290,8 +1291,10 @@ NAME tv_control_dialog
 DLG e
 """
 {cycle
-  - {drwi "notebook"} Page 1 : ............................. !
-  - {drwi "notebook"} Page 2 : ! ..............................
+  - {drwi "notebook"} Page 1 : ....................
+      ........................... !
+  - {drwi "notebook"} Page 2 : ! ..................
+      ............................
 }
 """
 NAME notebook_dialog
@@ -1314,10 +1317,9 @@ DLG h
      {drws "french_female_farmer"} ...
   - impact == 1 ?
     {drws "french_female_farmer"} Et bin... Ça tombe 
-      comme vache qui pisse,
-    {drws "french_female_farmer"} dis dont ! {pg}{drws "A"} Ouah ! Du patois !{pg}{drws "french_female_farmer"} Qu'est ce que jpeux 
-      faire pour toi l'inconnu ?{pg}{drws "A"} S'il vous plaît, 
-      Auriez-vous par hasard 
+      comme vache qui pisse !{pg}{drws "A"} Ouah ! Du patois !{pg}{drws "french_female_farmer"} Qu'est ce que jpeux 
+      faire pour toi l'inconnu ?{pg}{drws "A"} S'il vous plaît Madame, 
+      auriez-vous par hasard 
     {drws "A"} de la margarine ? {pg}{drws "french_female_farmer"} C'est qu'il a pas peur du 
       varou celui-là ! Il se trouve
     {drws "french_female_farmer"} qj'en ai sous le manteau !!
@@ -1379,12 +1381,12 @@ DLG m
 """
 {
   - sheepContact == 0 ?
-    {drws "French_sheep_1"} Behh !{sheepContact = 1}
+    {drws "french_sheep_1"} Behh !{sheepContact = 1}
   - sheepContact == 1 ?
-    {drws "French_sheep_1"} Behh !
+    {drws "french_sheep_1"} Behh !
 }{
   - timeMachineComponents == 4 ?
-    {drws "French_sheep_1"} Behh !
+    {drws "french_sheep_1"} Behh !
 }
 """
 NAME french_sheep_1_dialog
@@ -1393,12 +1395,12 @@ DLG n
 """
 {
   - sheepContact == 0 ?
-    {drws "French_sheep_2"} Behh !{sheepContact = 1}
+    {drws "french_sheep_2"} Behh !{sheepContact = 1}
   - sheepContact == 1 ?
-    {drws "French_sheep_2"} Behh !
+    {drws "french_sheep_2"} Behh !
 }{
   - timeMachineComponents == 4 ?
-    {drws "French_sheep_2"} Behh ! La porte que tu 
+    {drws "french_sheep_2"} Behh ! La porte que tu 
       cherches se trouve juste
     {drws "antique_sheep_2"} à côté de l'autre, 
       Behh ! Un peu plus haut !
@@ -1410,13 +1412,13 @@ DLG o
 """
 {
   - sheepContact == 0 ?
-    {drws "French_sheep_3"} Behh !
+    {drws "french_sheep_3"} Behh !
     {sheepContact = 1}
   - sheepContact == 1 ?
-    {drws "French_sheep_3"} Behh !
+    {drws "french_sheep_3"} Behh !
 }{
   - timeMachineComponents == 4 ?
-    {drws "French_sheep_3"} Behh !
+    {drws "french_sheep_3"} Behh !
 }
 """
 NAME french_sheep_3_dialog
@@ -1438,15 +1440,6 @@ VAR secondLocation
 
 VAR thirdLocation
 0
-
-TUNE 1
-d,0,l,0,s,0,m,0,0,0,r,0,d,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-NAME Roman's_antique_landscape
-KEY C,D,D#,F,G,G#,A# d,r,m,s,l
-TMP FST
-SQR P8 P2
-ARP INT8
 
 TUNE 2
 0,0,G,0,A,E,B,0,0,C5,B,A,G,0,0,G
@@ -1482,13 +1475,6 @@ NAME pick up key
 ENV 86 108 7 98 125
 BEAT 51 0
 SQR P8
-
-BLIP 3
-F5,F5,B5
-NAME pick up 1
-ENV 119 110 5 137 135
-BEAT 50 0
-SQR P2
 
 
 </script>
@@ -13237,7 +13223,6 @@ CHAR 9835
 011011
 011000
 000000
-</script>
 </script>
 
 </head>
