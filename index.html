@@ -69,7 +69,6 @@ w,u,x,0,12,12,12,12,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME Rome's countryside - scene 2
 PAL 0
-TUNE 1
 
 ROOM 2
 a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
@@ -1123,24 +1122,27 @@ DLG 2
     {drws "broken_time_machine"} Déverrouillage de la porte 
       principale !{/shk}
   - timeMachineComponents == 1 ?
-    {drws "broken_time_machine"}{shk}Absorption du nouveau composant en cours ! 
-      Calcul de la trajectoire ! 
-    {drws "broken_time_machine"} Impossibilité de rejoindre le temps présent... 
-      Besoin complémentaire détecté et nécessaire : 
-    {drws "broken_time_machine"} margarine du nord de la France. 
-      Nouvelle époque proposée : 1944
-    {drws "broken_time_machine"} Aire géographique : Normandie
-      Approuvez-vous ? {/shk}
+    {drws "broken_time_machine"}{shk} Absorption du nouveau 
+      composant en cours ! 
+    {drws "broken_time_machine"} Calcul de la trajectoire ! 
+      Impossibilité de rejoindre 
+    {drws "broken_time_machine"} le temps présent... 
+      Besoin complémentaire détecté.
+    {drws "broken_time_machine"} Margarine du nord 
+      de la France nécessaire. 
+    {drws "broken_time_machine"} Nouvelle proposition : 1944
+      Aire géographique : Normandie
+    {drws "broken_time_machine"} Approuvez-vous ? {/shk}
     {timeMachineComponents = 3}{scene1Transition = 2}{classroomDoorStatus = 3}{pg}{drws "A"} Génial !!!! Approuver !{pg}{drws "broken_time_machine"} {shk}Déplacement temporel 
       effectué ! 
     {drws "broken_time_machine"} Déverrouillage de la porte 
-      principale !{/shk}
-    {sheepContact = 0}
+      principale !{/shk}{sheepContact = 0}
   - scene1Transition == 3 ?
-      {drws "A"} La machine semble s'être à nouveau 
-       mise en veille...
+    {drws "A"} La machine semble s'être 
+      à nouveau mise en veille...
   - scene1Transition == 1 ?
-     {drws "A"} La machine semble s'être mise en veille...
+    {drws "A"} La machine semble s'être 
+      mise en veille...
 }
 """
 NAME broken_time_machine dialog
@@ -1280,8 +1282,10 @@ DLG c
 """
 {
   - timeMachineComponents == 4 ?
-    {repaired_time_machine = 1}{drws "repaired_time_machine"}Réinitialisation de la machine ! Substance absorbée !
-      Connexion établie avec GamaW ! Réparation terminé !{pg}{drws "A"} Ahahaha :D !
+    {repaired_time_machine = 1}{drws "repaired_time_machine"} Réinitialisation de la 
+      machine ! Substance absorbée !
+    {drws "repaired_time_machine"} Connexion établie avec GamaW. 
+      Réparation terminé !{pg}{drws "A"} Ahahaha :D !
 }{end}
 """
 NAME broken_time_machine_scene_4 dialog
@@ -1290,10 +1294,9 @@ DLG d
 """
 {cycle
   - {drwi "TV_control"} Chaine première : ......................
-    Recherche de signal...
-  - {drwi "TV_control"} 
-    Chaine deuxième : ......................
-    Recherche de signal...
+    {drwi "TV_control"} Recherche de signal...
+  - {drwi "TV_control"} Chaine deuxième : ......................
+    {drwi "TV_control"} Recherche de signal...
 }
 """
 NAME TV_control dialog
@@ -1324,16 +1327,23 @@ DLG h
   - timeMachineComponents == 4 ?
      {drws "French_female_farmer"} ...
   - impact == 1 ?
-    {drws "French_female_farmer"} Et bin dis dont... 
-    Ça tombe comme vache qui pisse ! {pg}{drws "A"} Ouah ! Du patois !{pg}{drws "French_female_farmer"} Qu'est ce que jpeux faire pour toi l'inconnu ?{pg}{drws "A"} Auriez-vous par hasard de la margarine, 
-      s'il vous plaît ? {pg}{drws "French_female_farmer"} C'est qu'il a pas peur du varou celui-là ! 
-      Il se trouve justement qj'en ai sous le manteau !!
+    {drws "French_female_farmer"} Et bin... Ça tombe 
+      comme vache qui pisse,
+    {drws "French_female_farmer"} dis dont ! {pg}{drws "A"} Ouah ! Du patois !{pg}{drws "French_female_farmer"} Qu'est ce que jpeux 
+      faire pour toi l'inconnu ?{pg}{drws "A"} S'il vous plaît, 
+      Auriez-vous par hasard 
+    {drws "A"} de la margarine ? {pg}{drws "French_female_farmer"} C'est qu'il a pas peur du 
+      varou celui-là ! Il se trouve
+    {drws "French_female_farmer"} qj'en ai sous le manteau !!
     {pg}{drws "A"} où ?{pg}{drws "French_female_farmer"} là !
     {sheepContact = 2}{timeMachineComponents = 4}
   - else ?
-     {drws "French_female_farmer"} Ces bombes ne me font pas peur !
-    {pg}{drws "A"} Vous auriez pas de la margarine par hasard Madame ?{pg}{drws "French_female_farmer"} Vla pour toi mon mignon ! 
-      Et surtout fait attention, c'est dangereux par ici !
+    {drws "French_female_farmer"} Ces bombes ne me font 
+      pas peur !
+    {drws "A"} Vous auriez pas de la 
+      margarine par hasard Madame !{pg}{drws "French_female_farmer"} Vla pour toi mon mignon ! 
+      Et surtout fait attention, 
+    {drws "French_female_farmer"} c'est dangereux par ici !
     {sheepContact = 2}{timeMachineComponents = 4}{pg}{drws "A"} Merci Madame !
 }
 """
