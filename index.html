@@ -1257,7 +1257,7 @@ DLG b
   - timeMachineComponents == 3 ?
     {property locked true}
   - timeMachineComponents == 4 ?
-    {drws "A"} {rbw}Enfin !!!! Une porte qui 
+    {drws "A"} {rbw}Oh !!!! Une porte qui 
       s'ouvre !{/rbw}{property locked false}
 }
 """
@@ -1324,7 +1324,7 @@ DLG h
       varou celui-là ! Il se trouve
     {drws "french_female_farmer"} qj'en ai sous le manteau !!
     {pg}{drws "A"} où ?{pg}{drws "french_female_farmer"} là !
-    {sheepContact = 2}{timeMachineComponents = 4}
+    {timeMachineComponents = 4}
   - else ?
     {drws "french_female_farmer"} Ces bombes ne me font 
       pas peur !
@@ -1332,7 +1332,7 @@ DLG h
       margarine par hasard Madame !{pg}{drws "french_female_farmer"} Vla pour toi mon mignon ! 
       Et surtout fait attention, 
     {drws "french_female_farmer"} c'est dangereux par ici !
-    {sheepContact = 2}{timeMachineComponents = 4}{pg}{drws "A"} Merci Madame !
+    {timeMachineComponents = 4}{pg}{drws "A"} Merci Madame !
 }
 """
 NAME french_female_farmer_dialog
@@ -1358,6 +1358,7 @@ DLG l
     {thirdLocation = 2}{drws "A"} Aaaaaah ! Ça ne 
       s'ouvre plus !!!!! 
     {drws "A"} Bon ! Restons calme (aaahh) !
+    {sheepContact = 2}
   - thirdLocation == 1 ?
     {thirdLocation = 0}{exit "0" 13 15}
   - classroomDoorStatus == 4 ?
@@ -1399,7 +1400,7 @@ DLG n
   - sheepContact == 1 ?
     {drws "french_sheep_2"} Behh !
 }{
-  - timeMachineComponents == 4 ?
+  - sheepContact == 2 ?
     {drws "french_sheep_2"} Behh ! La porte que tu 
       cherches se trouve juste
     {drws "antique_sheep_2"} à côté de l'autre, 
