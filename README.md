@@ -13,7 +13,7 @@ Il vous sera possible de voyager entre plusieurs scènes représentant différen
 
 #### Interactions
 
-Vous pourrez jouer et rejouer à *The Voyager (French version)* afin d'interagir avec des objets (certains sont absorbables &#x1F609;), des animaux ou des personnages qui vous permettront de créer des versions alternatives du récit auquel vous appartenez.
+Vous pourrez jouer et rejouer à *The Voyager (French version)* afin d'interagir avec des objets (certains objets sont absorbables &#x1F609;), des animaux ou des personnages qui vous permettront de créer des versions alternatives du récit auquel vous appartenez.
 
 #### Dialogues
 
