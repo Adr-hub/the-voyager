@@ -29,7 +29,7 @@ Sur un PC ou un Mac, cliquez sur la fenêtre du jeu avec votre souris ou votre p
 
 ## Moteur de jeu et outil de capture utilisés
 
-Ce jeu a été développé avec Bitsy (https://www.bitsy.org/). La capture d'écran présentée plus haut a été réalisée avec l'outil intégré à Windows 11.
+Ce jeu a été développé avec Bitsy (https://www.bitsy.org/). La capture d'écran présentée plus haut a été réalisée à l'aide de l'outil intégré à Windows 11.
 
 ## Recours à l'IA
 
