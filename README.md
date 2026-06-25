@@ -53,4 +53,4 @@ Quelques exemples de prompts essentiels, reformulés pour plus de clarté, sont 
 
 ## Contexte de développement
 
-Ce projet a été développé pour le cours « Développement de jeux vidéo 2D » dispensé par Monsieur Loïc Cattani (SLI, Lettres, UNIL).
+Ce projet a été développé au printemps 2026 pour le cours « Développement de jeux vidéo 2D » dispensé par Monsieur Loïc Cattani (SLI, Lettres, UNIL).
