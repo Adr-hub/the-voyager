@@ -23,9 +23,9 @@ Les dialogues sont centraux. Qu'ils soient longs, courts, parfois incompréhensi
 
 *The Voyager (French version)* se lance directement lorsque vous arrivez sur la page itch qui lui est dédiée. 
 
-Sur un PC ou un Mac, cliquez sur la fenêtre du jeu avec votre souris ou votre pavé tactile. Utilisez ensuite n'importe quelle touche de votre clavier pour débuter la partie, c'est-à-dire pour dérouler les premières interrogations du protagoniste.
+Sur un PC ou un Mac, cliquez sur la fenêtre du jeu avec votre souris ou votre pavé tactile. Utilisez ensuite n'importe quelle touche de votre clavier pour débuter la partie.
 
-*The Voyager (French version)* n'est pas compatible avec les smartphones, mais vous pouvez y jouer sur les tablettes. Il vous faudra alors cliquer à l'endroit de votre choix dans la fenêtre du jeu avec l'un de vos doigts ou un stylet pour lancer la partie.
+*The Voyager (French version)* n'est pas compatible avec les smartphones, mais vous pouvez y jouer sur les tablettes. Il vous faudra alors cliquer à l'endroit de votre choix dans la fenêtre du jeu avec l'un de vos doigts ou un stylet pour le lancer.
 
 ## Moteur de jeu et outil de capture utilisés
 
