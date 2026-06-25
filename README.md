@@ -21,7 +21,7 @@ Les dialogues sont centraux. Qu'ils soient longs, courts, parfois incompréhensi
 
 ## Procédure de lancement
 
-*The Voyager (French version)* se lance directement lorsque vous arrivez sur la page itch.io qui lui est dédiée (https://ar26.itch.io/the-voyager-french-version). 
+*The Voyager (French version)* se lance directement lorsque vous arrivez sur la page itch.io qui lui est dédiée, à l'adresse suivante : https://ar26.itch.io/the-voyager-french-version. 
 
 Sur un PC ou un Mac, cliquez sur la fenêtre du jeu avec votre souris ou votre pavé tactile. Utilisez ensuite n'importe quelle touche de votre clavier pour débuter la partie.
 
