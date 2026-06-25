@@ -33,13 +33,13 @@ Ce jeu a été développé avec Bitsy (https://www.bitsy.org/). La capture d'éc
 
 ## Recours à l'IA
 
-La version gratuite de ChatGPT (GPT-5.3-mini et GPT 5.5) et le Microsoft Copilot Chat de l'UNIL (GPT-5 chat) m'ont été utiles pour développer *The Voyager (French version)*.
+La version gratuite de ChatGPT (GPT-5.3-mini et GPT 5.5) et Microsoft 365 Copilot que fournit l'UNIL (GPT-5 chat) m'ont été utiles pour développer *The Voyager (French version)*.
 
 Aucune ligne de code du jeu n'a été générée par l'IA, mais celle-ci a, par exemple, été précieuse pour la vérification des droits d'auteur, pour la création de ce document, ainsi que pour la correction de l'orthographe et de la grammaire dans les dialogues, les noms des éléments du jeu et le texte que vous lisez en ce moment. 
 
 Par ailleurs, ChatGPT a notamment été utilisé à plusieurs reprises afin de générer le design du jeu. Ce sont des objets, des éléments de décor ou des personnages qui ont parfois été adaptés à partir de ces générations ou bien qui ont été utilisés tels qu'ils ont été proposés. 
 
-Microsoft Copilot Chat a également été une aide dans la création du scénario de ce jeu. Certains dialogues ont été proposés directement et certaines idées ont permis de les imaginer. 
+Microsoft 365 Copilot a également été une aide dans la création du scénario de ce jeu. Certains dialogues ont été proposés directement et certaines idées ont permis de les imaginer. 
 
 Quelques exemples de prompts essentiels, reformulés pour plus de clarté, sont : 
 1. Est-ce que tu peux me diriger afin de dessiner un avatar ou un sprite pour mon jeu Bitsy ?
